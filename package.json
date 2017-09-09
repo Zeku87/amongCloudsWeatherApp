@@ -1,0 +1,26 @@
+{
+  "name": "amongCloudsWeatherApp",
+  "version": "0.0.0",
+  "description": "Weather web app",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Zeku87/amongCloudsWeatherApp.git"
+  },
+  "keywords": [
+    "web",
+    "app",
+    "node",
+    "gulp",
+    "ecmascript",
+    "6"
+  ],
+  "author": "Ezequiel Gallardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zeku87/amongCloudsWeatherApp/issues"
+  }
+}
