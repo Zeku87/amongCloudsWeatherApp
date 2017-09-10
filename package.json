@@ -22,5 +22,10 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Zeku87/amongCloudsWeatherApp/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-sass": "^3.1.0"
   }
 }
