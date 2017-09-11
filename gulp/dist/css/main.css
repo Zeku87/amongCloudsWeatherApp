@@ -1,5 +1,1 @@
-body {
-  background-color: #d3d3d3; }
-
-#header {
-  color: red; }
+#header{color:red;border:solid 20px black;border-radious:20px;-webkit-box-shadow:1px 1px 2px navy;box-shadow:1px 1px 2px navy}body{background-color:#d3d3d3}
