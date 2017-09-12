@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var inject = require('gulp-inject');
+var wiredep = require('wiredep').stream;
 var concat = require('gulp-concat');
 var postcss = require('gulp-postcss');
 var csswring = require('csswring'); //estruja el codigo css
@@ -29,6 +30,7 @@ gulp.task('styles', function(){
     var processors = [csswring, autoprefixer];
     
     return gulp.src('src/scss/main.scss')
+	.pipe(wiredep())
 	.pipe(inject(injectScssFiles, injectScssOptions))
 	.pipe(sass())
 	.pipe(postcss(processors))

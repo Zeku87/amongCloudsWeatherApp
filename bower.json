@@ -1,0 +1,28 @@
+{
+  "name": "amongCloudsWeatherApp",
+  "description": "Weather web app",
+  "main": "index.html",
+  "authors": [
+    "Ezequiel Gallardo"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "web",
+    "app",
+    "node",
+    "gulp",
+    "ecmascript",
+    "6"
+  ],
+  "homepage": "https://github.com/Zeku87/amongCloudsWeatherApp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
