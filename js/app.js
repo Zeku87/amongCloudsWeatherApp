@@ -17,7 +17,9 @@ else
 }
 
 //Set time
-var time = date.getHours() + ":" + date.getMinutes();
+
+var time = date.getHours() + ":" + ( "0" + date.getMinutes()).slice(-2);
+;
 $(".main-clock").text(time);
 
 //Set date from date.js today function
@@ -33,8 +35,8 @@ $.getJSON(url, (jsonFile)=>{
 	iconId = jsonFile.weather[0].icon;
 	currentTemp = jsonFile.main.temp;
 	currentTemp -= 273.16; //Kelvin to ºC
-	currentTemp = currentTemp.toFixed(2);
-	currentTemp .= "ºC";
+	currentTemp = currentTemp.toFixed(0);
+	currentTemp += "ºC";
 	//Show information
 	$(".weather-location-weathersymbol").attr("src", "http://openweathermap.org/img/w/" + iconId + ".png");
 	$(".weather-temperature").text(currentTemp);
