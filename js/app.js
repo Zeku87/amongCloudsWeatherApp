@@ -17,7 +17,7 @@ else
 }
 
 //Set time
-
+                                    //two digits
 var time = date.getHours() + ":" + ( "0" + date.getMinutes()).slice(-2);
 ;
 $(".main-clock").text(time);
