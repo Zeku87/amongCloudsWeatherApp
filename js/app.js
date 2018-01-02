@@ -29,6 +29,7 @@ $(".main-date").text(today());
 const appid = "ac40fa4914a844cbb43379bcbab81383"; 
 const url = "http://api.openweathermap.org/data/2.5/weather?q=cadiz,es&appid=" + appid;
 var iconId = "";
+var bgWeatherImagePath = "";
 var currentTemp = "";
 
 $.getJSON(url, (jsonFile)=>{
@@ -37,6 +38,11 @@ $.getJSON(url, (jsonFile)=>{
 	currentTemp -= 273.16; //Kelvin to ºC
 	currentTemp = currentTemp.toFixed(0);
 	currentTemp += "ºC";
+
+	bgWeatherImagePath = getImagePath(iconId);
+	console.log(bgWeatherImagePath);
+	$('body').css('background-image','url(' + bgWeatherImagePath + ')')
+
 	//Show information
 	$(".weather-location-weathersymbol").attr("src", "http://openweathermap.org/img/w/" + iconId + ".png");
 	$(".weather-temperature").text(currentTemp);
