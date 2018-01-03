@@ -41,8 +41,9 @@ $.getJSON(url, (jsonFile)=>{
 
 	bgWeatherImagePath = getImagePath(iconId);
 	console.log(bgWeatherImagePath);
-	$('body').css('background-image','url(' + bgWeatherImagePath + ')')
-
+	$('body').css('background-image','url(' + bgWeatherImagePath + ')');
+	$('body').css('background-repeat','no-repeat');
+	
 	//Show information
 	$(".weather-location-weathersymbol").attr("src", "http://openweathermap.org/img/w/" + iconId + ".png");
 	$(".weather-temperature").text(currentTemp);
