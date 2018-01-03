@@ -1,12 +1,31 @@
 .main{
+	display: flex;
+	justify-content: center;
+	color: white;
+	border-radius: 25px;
 	margin-top: 10%;
 }
 
+.main-wrapper{
+	display: inline;
+	background-color: rgba(0,0,0,0.5);
+	padding: 0 10%;
+}
+
 .weather{
+	display: flex;
+	justify-content: center;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	text-align: center;
+}
+
+.weather-location{
+	color: white;
+	display: inline;
+	background-color: rgba(0,0,0,0.7);
+	padding: 0 5%;
 }
 
 .weather-location-icon{
