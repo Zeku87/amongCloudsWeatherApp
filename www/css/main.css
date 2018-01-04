@@ -2,20 +2,31 @@
 
 *{
 	font-family: 'Ubuntu', sans-serif;
+	overflow: hidden;
 }
 
+/*header section*/
+.background-weather-image{
+	visibility: hidden;
+}
+
+/*index section*/
 .main{
 	display: flex;
+	position: fixed;
+	top: 0;
+	width: 100%;
 	justify-content: center;
 	color: white;
-	border-radius: 25px;
 	margin-top: 10%;
 }
 
 .main-wrapper{
 	display: inline;
 	background-color: rgba(0,0,0,0.5);
-	padding: 0 10%;
+	border-radius: 25px;
+	width:100%;
+	margin: 0 10%;
 }
 
 .weather{
@@ -31,7 +42,7 @@
 	color: white;
 	display: inline;
 	background-color: rgba(0,0,0,0.7);
-	padding: 0 5%;
+	width: 100%;
 }
 
 .weather-location-icon{
@@ -40,11 +51,40 @@
 }
 
 @media only screen and (min-width:768px){
+
+
 	.main{
 		margin-top: 5%;
 	}
 
+	.main-wrapper{
+		width: 50%;
+		margin: 0;
+	}
+
+	.weather-location{
+		width: 50%;
+	}
+
 	.weather-location-icon{
 		width: 24px;
+	}
+}
+
+@media only screen and (min-width:1024px){
+	/*header section*/
+	.background-weather-image{
+		visibility: visible;
+		object-fit: cover;
+		width:100%;
+	  	height: 100%;
+	  	display: block;
+	}
+	.main-wrapper{
+		width: 35%;
+	}
+
+	.weather-location{
+		width: 35%;
 	}
 }
