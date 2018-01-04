@@ -42,8 +42,8 @@ $.getJSON(url, (jsonFile)=>{
 	//display weather conditions background image
 	bgWeatherImagePath = getImagePath(iconId);
 	console.log(bgWeatherImagePath);
-	$("body").css("background-color", "rgb(37,36,64)");
-	$('.background-weather-image').attr('src', bgWeatherImagePath);
+	$("body").css("background", "url('"+ bgWeatherImagePath +"') no-repeat center center fixed");
+	//$('.background-weather-image').attr('src', bgWeatherImagePath);
 	
 	//Show information
 	$(".weather-location-weathersymbol").attr("src", "http://openweathermap.org/img/w/" + iconId + ".png");

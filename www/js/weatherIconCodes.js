@@ -9,15 +9,15 @@ var codesImages = {
 	"011d":"img/stormy.jpg",
 	"013d":"img/snowy.jpg",
 	"050d":"img/foggy.jpg",
-	"01n":"img/sunny.jpg",
-	"02n":"img/cloudy.jpg",
-	"03n":"img/cloudy.jpg",
-	"04n":"img/cloudy.jpg",
-	"09n":"img/rainy.jpg",
-	"010n":"img/rainy.jpg",
-	"011n":"img/stormy.jpg",
-	"013n":"img/snowy.jpg",
-	"050n":"img/foggy.jpg"
+	"01n":"img/moony.jpg",
+	"02n":"img/cloudy-n.jpg",
+	"03n":"img/cloudy-n.jpg",
+	"04n":"img/cloudy-n.jpg",
+	"09n":"img/rainy-n.jpg",
+	"010n":"img/rainy-n.jpg",
+	"011n":"img/stormy-n.jpg",
+	"013n":"img/snowy-n.jpg",
+	"050n":"img/foggy-n.jpg"
 };
 
 var getImagePath = function(iconCodeApi){
