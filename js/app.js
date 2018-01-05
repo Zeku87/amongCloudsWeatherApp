@@ -1,12 +1,13 @@
 //Set the greeting based on the time
 var date = new Date();
 var hour = date.getHours();
+console.log(hour);
 if( hour >= 5 && hour < 12 )
 {
 	$(".main-greeting").text("Buenos días");
 
 } 
-if( hour >= 12 && hour < 21)
+else if( hour >= 12 && hour < 21)
 {
 	$(".main-greeting").text("Buenas tardes");
 
