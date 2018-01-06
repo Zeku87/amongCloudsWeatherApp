@@ -41,6 +41,7 @@ $.getJSON(url, (jsonFile)=>{
 	currentTemp += "ºC";
 
 	//display weather conditions background image
+	console.log(iconId);
 	bgWeatherImagePath = getImagePath(iconId);
 	console.log(bgWeatherImagePath);
 	$("body").css("background", "url('"+ bgWeatherImagePath +"') no-repeat center center fixed");
