@@ -28,7 +28,7 @@ $(".main-date").text(today());
 
 //Let's call weather API to get the icon code and current temperature
 const appid = "ac40fa4914a844cbb43379bcbab81383"; 
-const url = "http://api.openweathermap.org/data/2.5/weather?q=cadiz,es&appid=" + appid;
+const url = "http://api.openweathermap.org/data/2.5/weather?q=Chiclana de la Frontera,ES&appid=" + appid;
 var iconId = "";
 var bgWeatherImagePath = "";
 var currentTemp = "";
@@ -51,4 +51,14 @@ $.getJSON(url, (jsonFile)=>{
 	$(".weather-location-weathersymbol").attr("src", "http://openweathermap.org/img/w/" + iconId + ".png");
 	$(".weather-temperature").text(currentTemp);
 
+});
+
+//Overlay
+$('.header-config').click(function(){
+	console.log("click");
+	$('.overlay').css('visibility', 'visible');
+});
+
+$('.overlay-close').click(function(){
+	$('.overlay').css('visibility','hidden');
 });
