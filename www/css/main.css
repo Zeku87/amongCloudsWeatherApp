@@ -96,5 +96,24 @@ body{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.9);
+}
+
+.overlay-city{
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+.overlay-city-input{
+	background-color: rgba(0,0,0,0.9);
+	border-color: white;
+	border-radius: 10px;
+	color:white;
+	width: 30%;
+	padding-left: 15px;
+}
+
+.overlay-city-button{
+	margin-left: 5px;
 }
