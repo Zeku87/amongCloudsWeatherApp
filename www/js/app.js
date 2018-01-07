@@ -62,3 +62,32 @@ $('.header-config').click(function(){
 $('.overlay-close').click(function(){
 	$('.overlay').css('visibility','hidden');
 });
+
+var cities = [
+      "Cadiz",
+      "Sevilla",
+      "Cordoba",
+      "Huelva",
+      "Málaga",
+      "Almería",
+      "Jaén",
+      "Badajoz",
+      "Cáceres",
+      "Mérida",
+      "Madrid",
+      "Guadalajara",
+      "Ávila",
+      "León",
+      "Soria",
+      "Salamanca",
+      "Palencia",
+      "Burgos",
+      "Segovia",
+      "Toledo",
+      "Ciudad Real",
+      "Zaragoza",
+      "Albacete"
+    ];
+    $( ".overlay-city-input" ).autocomplete({
+      source: cities
+    });
