@@ -1,5 +1,5 @@
 //Set date
-getDate(){
+function getDate(){
 
 	var today = function(){
 		var date = new Date();

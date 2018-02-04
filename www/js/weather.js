@@ -1,6 +1,6 @@
-getWeather(){
+function getWeather(latitude, longitude){
 	const appid = "ac40fa4914a844cbb43379bcbab81383"; 
-	const url = "http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=" + appid;
+	const url = "http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&appid=" + appid;
 	var cityName = "";
 	var iconId = "";
 	var bgWeatherImagePath = "";
